@@ -1,0 +1,49 @@
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>jquery each</title>
+  </head>
+  <body>
+    <ul>
+      <li>foo</li>
+      <li>bar</li>
+    </ul>
+    <script src="./jquery.min.js">
+
+    </script>
+  <script type="text/javascript">
+    $("li").each(function(index){
+
+      console.log(index + ":" +$(this).text());
+    });
+  </script>
+  </body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  div { color:red; text-align:center; cursor:pointer;
+        font-weight:bolder; width:300px; }
+  </style>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body>
+  <div>Click here</div>
+  <div>to iterate through</div>
+  <div>these divs.</div>
+<script>
+    $(document.body).click(function () {
+      $( "div" ).each(function (i) {
+        if ( this.style.color != "blue" ) {
+          this.style.color = "blue";
+        } else {
+          this.style.color = "";
+        }
+      });
+    });
+</script>
+
+</body>
+</html>
