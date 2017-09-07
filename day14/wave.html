@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Wave</title>
+    <style media="screen">
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      body{
+        background-color: lightblue;
+      }
+      .one{
+        position: absolute;
+        top:700px;
+        animation: wave1 3s linear infinite;
+      }
+      .two{
+        position: absolute;
+        top:700px;
+        animation: wave 3s linear infinite;
+      }
+      .sun{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: gold;
+        position: relative;
+        top:10px;
+        left:10px;
+      }
+      .a{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        box-sizing: border-box;
+        border: 15px solid rgba(255, 255, 255, 0.5) ;
+        animation: change 2s linear infinite;
+        box-shadow: 5px;
+
+      }
+      @keyframes wave {
+        0%{
+          top:750px;
+        }
+        50%{
+          top:700px;
+        }
+        100%{
+          top:750px;
+        }
+
+      }
+      @keyframes wave1 {
+        0%{
+          top:700px;
+        }
+        50%{
+          top:750px;
+        }
+        100%{
+          top:700px;
+        }
+
+      }
+      @keyframes change {
+        0%{
+          border: 15px solid rgba(255, 255, 255, 0) ;
+        }
+        50%{
+          border: 15px solid rgba(255, 255, 255, 0.5) ;
+        }
+        100%{
+          border: 15px solid rgba(255, 255, 255, 0) ;
+        }
+
+      }
+    </style>
+  </head>
+  <body>
+    <img class="one" src="./image/1.png" alt="">
+    <img class="two" src="./image/2.png" alt="">
+    <div class="a">
+      <div class="sun">
+
+      </div>
+    </div>
+
+  </body>
+</html>

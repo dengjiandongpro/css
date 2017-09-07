@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>媒体查询</title>
+
+    <!--
+    移动设备有关viewport
+    visual viewport 浏览器窗口大小，可变。
+    idea viewport
+    layout viewport 相当于一个大的box ，内容部分写在里面，你通过visual viewport所看到的内容就是layout viewport上的部分内容。
+    注：在放大和缩小的过程中，visual viewport和layout viewport的宽，高都没发生任何的变化,变化的仅仅就像是用户拿着这个visual viewport
+    去远离或者靠近layout viewport，在远离或者靠近的过程中，就会呈现出缩放的效果来。
+    -->
+    <meta name="viewport"
+    content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no" >
+
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .one {
+        font-size: 50px;
+        color: red;
+      }
+
+
+      /*
+      根据当前屏幕的特点，当符合其中某个规则时，就会应用对应的样式
+      */
+      /*根据可视窗口 宽度*/
+      @media screen and (width:1000px){
+        .one {
+          color: green;
+        }
+      }
+
+      @media screen and (height:400px){
+        .one {
+          font-size: 100px;
+        }
+      }
+
+
+
+
+      .two {
+        color: purple;
+      }
+
+      /*
+      当尺寸大于等于 980px， min-width下限
+      */
+      @media all and (min-width: 980px){
+          .two {
+            color: orange;
+            font-size: 100px;
+          }
+      }
+
+
+      /*
+      当尺寸小于等于 1200px， max-width上限
+      */
+      @media all and (max-width: 1200px){
+          .two {
+            background: yellow;
+          }
+      }
+
+
+
+
+      .three {
+        font-size: 100px;
+      }
+
+
+      /*
+      and是并且
+      */
+      @media all and (min-width: 600px) and (max-width:980px){
+        .three {
+          color: green;
+        }
+      }
+
+      @media all and (min-width: 981px) and (max-width:1200px){
+        .three {
+          color: yellow;
+        }
+      }
+
+
+      @media all and (min-width: 1201px) and (max-width:1920px){
+        .three {
+          color: blue;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+
+
+    <div class="one">
+      开始是红色的
+    </div>
+
+    <div class="two">
+      two元素
+    </div>
+
+    <div class="three">
+      three元素
+    </div>
+
+  </body>
+</html>

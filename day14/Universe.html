@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>STAR</title>
+    <style media="screen">
+      *{
+        margin: 0px;
+        padding: 0px;
+      }
+      body{
+        background: url(./image/bg.jpg)
+      }
+      .con{
+        width: 1000px;
+        height: 1000px;
+        margin: 100px auto;
+        position: relative;
+      }
+      .a{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left:50%;
+        margin-top: -25px;
+        margin-left: -25px;
+        /*border: 1px solid lightblue;*/
+        background-color: gold;
+        animation: move 5s linear infinite;
+      }
+      .a1{
+        width: 0;
+        height: 0;
+        border: 7px solid gold;
+        border-radius: 50%;
+        position: absolute;
+        top:-55px;
+        left:0px;
+      }
+      .b{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left:50%;
+        margin-top: -75px;
+        margin-left: -75px;
+        border: 1px solid lightblue;
+        transform-origin: center;
+        transform: rotate(0deg);
+        animation: move 10s linear infinite;
+      }
+      .b1{
+        width: 0;
+        height: 0;
+        border: 7px solid gray;
+        border-radius: 50%;
+        position: absolute;
+        top:-35px;
+        left:0;
+      }
+      .c{
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left:50%;
+        margin-top:-125px;
+        margin-left:-125px;
+        border: 1px solid lightblue;
+        animation: move 15s linear infinite;
+
+      }
+    /* 地球*/
+      .c1{
+        width: 0;
+        height: 0;
+        border: 7px solid blue;
+        border-radius: 50%;
+        position: absolute;
+        top:-10px;
+        left:0px;
+      }
+      /*月亮的轨道*/
+      .c1 .c11{
+        width: 30px;
+        height: 30px;
+        /*border: 1px solid lightblue;*/
+        border-radius: 50%;
+        position: absolute;
+        left:-15px;
+        top:-16px;
+        animation: move 2s linear infinite;
+      }
+    /*月亮*/
+      .c1 .c11 .c111{
+        width: 0;
+        height: 0;
+        border: 3px solid white;
+        border-radius: 50%;
+        position: absolute;
+        top:0;
+        left:0;
+      }
+
+      .d{
+        width: 350px;
+        height: 350px;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left:50%;
+        margin-top:-175px;
+        margin-left: -175px;
+        border: 1px solid lightblue;
+        animation: move 20s linear infinite;
+      }
+      .d1{
+        width: 0;
+        height: 0;
+        border: 7px solid rgb(217, 118, 37);
+        border-radius: 50%;
+        position: absolute;
+        top:19px;
+        left:0px;
+      }
+      .e{
+        width: 450px;
+        height: 450px;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left:50%;
+        margin-top: -225px;
+        margin-left: -225px;
+        border: 1px solid lightblue;
+        animation: move 25s linear infinite;
+      }
+      .e1{
+        width: 0;
+        height: 0;
+        border: 7px solid rgb(162, 127, 37);
+        border-radius: 50%;
+        position: absolute;
+        top:50px;
+        left:0px;
+      }
+      .f{
+        width: 550px;
+        height: 550px;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left:50%;
+        margin-top: -275px;
+        margin-left: -275px;
+        border: 1px solid lightblue;
+        animation: move 30s linear infinite;
+      }
+      .f1{
+        width: 0;
+        height: 0;
+        border: 7px solid rgb(161, 170, 63);
+        border-radius: 50%;
+        position: absolute;
+        top:86px;
+        left:0px;
+
+      }
+      .f1 .f11{
+        width: 30px;
+        height: 30px;
+        border: 5px solid gray;
+        border-radius: 50%;
+        position: absolute;
+        left:-15px;
+        top:-16px;
+        box-sizing: border-box;
+        transform: rotateY(45deg);
+        /*animation: move 2s linear infinite;*/
+      }
+      .o{
+        width: 650px;
+        height: 650px;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left:50%;
+        margin-top: -325px;
+        margin-left: -325px;
+        border: 1px solid lightblue;
+        animation: move 35s linear infinite;
+
+      }
+      .o1{
+        width: 0;
+        height: 0;
+        border: 7px solid rgb(163, 176, 224);
+        border-radius: 50%;
+        position: absolute;
+        top:120px;
+        left:0px;
+      }
+      .p{
+        width: 750px;
+        height: 750px;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left:50%;
+        margin-top: -375px;
+        margin-left: -375px;
+        border: 1px solid lightblue;
+        animation: move 40s linear infinite;
+
+      }
+      .p1{
+        width: 0;
+        height: 0;
+        border: 7px solid rgb(57, 29, 224);
+        border-radius: 50%;
+        position: absolute;
+        top:120px;
+        right:23px;
+      }
+      .q{
+        width: 850px;
+        height: 850px;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left:50%;
+        margin-top: -425px;
+        margin-left: -425px;
+        border: 1px solid lightblue;
+      }
+      @keyframes move {
+        0%{
+          transform: rotate(0deg);
+        }
+        100%{
+          transform: rotate(360deg);
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="con">
+      <div class="a">
+       <div class="a1">
+
+       </div>
+     </div>animation: move 15s linear infinite;
+      <div class="b">
+        <div class="b1">
+
+        </div>
+
+      </div>
+      <div class="c">
+        <div class="c1">
+          <div class="c11">
+            <div class="c111">
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="d">
+       <img src="./image/asteroids_meteorids.png" alt="">
+       <div class="d1">
+
+       </div>
+      </div>
+      <div class="e">
+        <div class="e1">
+
+        </div>
+
+      </div>
+      <div class="f">
+        <div class="f1">
+           <div class="f11">
+
+           </div>
+        </div>
+      </div>
+      <div class="o">
+        <div class="o1">
+
+        </div>
+      </div>
+      <div class="p">
+        <div class="p1">
+
+        </div>
+      </div>
+      <div class="q">
+
+      </div>
+
+    </div>
+
+  </body>
+</html>

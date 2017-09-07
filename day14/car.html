@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>car</title>
+    <style media="screen">
+      *{
+        margin:0;
+        padding: 0;
+      }
+      img{
+        margin-top: 300px;
+        width: 200px;
+        height: 100px;
+        animation: run 3s linear forwards ,skt 3s ease-out;
+        position: relative;
+        left:0;
+        transform: skew(0deg);
+      }
+     @keyframes run{
+       0% {
+         left:0px;
+       }
+       50%{
+         left:500px;
+       }
+       100%{
+         left:1500px;
+       }
+     }
+     @keyframes skt {
+       0%{
+         transform: skewX(30deg);
+       }
+
+       90%{
+         transform: skewX(0deg);
+       }
+
+       95%{
+         transform: skewX(-30deg);
+       }
+     }
+
+
+
+
+    </style>
+  </head>
+  <body>
+    <img src="./image/car.jpg" alt="">
+
+
+  </body>
+</html>

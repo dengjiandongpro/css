@@ -1,0 +1,22 @@
+
+$bigFont: 100px;
+$color: yellow;
+$bg:blue;
+
+.one {
+  font-size: $bigFont;
+  background-color: $bg;
+}
+
+.two{
+  color: $color;
+  font-size: $bigFont;
+}
+
+
+.three {
+  background: red;
+  &:hover {
+    background: blue;
+  }
+}

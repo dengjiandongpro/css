@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+        * {
+          margin: 0;
+          padding: 0;
+        }
+
+        .one {
+          width: 500px;
+          height: 300px;
+          border: 5px solid red;
+          margin: 50px auto;
+
+
+          /*border-top-left-radius: 50px 30px;
+          border-top-right-radius: 50px 30px;
+          border-bottom-left-radius: 50px 30px;
+          border-bottom-right-radius: 50px 30px;*/
+
+          /*角，按照顺时针顺序*/
+          /*
+           对角对称关系
+          */
+          /*border-radius: 50px 50px 50px 50px  / 30px 30px 30px 30px;*/
+          /*border-radius: 50px 40px   / 30px 20px ;*/
+          /*border-radius: 50px / 30px;*/
+          /*border-radius: 50px;*/
+
+          /*变成椭圆*/
+          /*border-radius: 250px/150px;*/
+          border-radius: 50%;
+        }
+        .container{
+          width: 1000px;
+          height: 1000px;
+          background-color: gray;
+          position: relative;
+          margin:0 auto;
+        }
+
+        .two {
+          width: 300px;
+          height: 150px;
+          /*border: 5px solid red;*/
+          border-radius: 150px 150px 0 0/ 170px 170px 0 0;
+          background: yellow;
+          position: relative;
+          margin: 0 auto;
+        }
+
+        .two .left{
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          background-color: red;
+          position: absolute;
+          top:50px;
+          left:60px;
+
+        }
+        .two .right{
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          background-color: red;
+          position: absolute;
+          top:50px;
+          left:210px;
+
+        }
+
+        .bottom{
+          width: 300px;
+          height: 300px;
+          background-color: yellow;
+          margin-top: 20px;
+          margin-left: auto;
+          margin-right: auto;
+          border-radius: 0 0 50px 50px;
+          text-align: center;
+          color: red;
+          font-size: 50px;
+          font-weight: bolder;
+        }
+
+        .foot{
+          width: 300px;
+          height: 100px;
+          margin:0 auto;
+
+        }
+        .foot .foot-left{
+          width:50px;
+          height: 100px;
+          background-color: red;
+          margin-left: 50px;
+          float: left;
+          border-radius: 0 0 50px 50px;
+        }
+
+        .foot .foot-right{
+          width:50px;
+          height: 100px;
+          background-color: red;
+          margin-right:  50px;
+          float: right;
+          border-radius: 0 0 50px 50px;
+        }
+
+        .body-left{
+          width: 50px;
+          height: 250px;
+          position: absolute;
+          left:275px;
+          top:550px;
+          background-color: red;
+          border-radius: 50px 50px 50px 50px;
+        }
+        .body-right{
+          width: 50px;
+          height: 250px;
+          position: absolute;
+          left:675px;
+          top:550px;
+          background-color: red;
+          border-radius: 50px 50px 50px 50px;
+        }
+
+
+
+
+
+    </style>
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="one"></div>
+
+      <div class="two">
+         <div class="left">
+
+         </div>
+         <div class="right">
+
+         </div>
+      </div>
+      <div class="bottom">
+        我是刘锦顺！！！我骄傲！！！
+
+      </div>
+      <div class="foot">
+        <div class="foot-left">
+
+        </div>
+        <div class="foot-right">
+
+        </div>
+
+      </div>
+      <div class="body-left">
+
+      </div>
+      <div class="body-right">
+
+      </div>
+    </div>
+
+
+
+    <!-- 边框圆角化  -->
+
+  </body>
+</html>

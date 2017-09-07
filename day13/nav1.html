@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+    *{
+      margin:0;
+      padding: 0;
+    }
+    .a,.b,.c,.d,.e,.f{
+      width: 100px;
+      height: 50px;
+      margin-top: 50px;
+      margin-left:  2px;
+      float: left;
+      background-color: green;
+      transition: all 1s;
+      transform-style: preserve-3d;
+      color: blue;
+      /*transform: rotateX(-15deg)  rotateY(-15deg) ;*/
+    }
+    .a li{
+      position: absolute;
+      width: 100px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      opacity: 0.5;
+    }
+    .a li:nth-of-type(1){
+      /*transform: translateZ(0px);*/
+    }
+    .a li:nth-of-type(2){
+      transform: rotateX(90deg) translateZ(0px);
+      transform-origin: top;
+      background-color: yellow;
+
+    }
+    .a li:nth-of-type(3){
+      transform: rotateX(90deg) translateZ(-50px);
+      transform-origin: top;
+      background-color: pink;
+
+    }
+    .a li:nth-of-type(4){
+      transform:translateZ(50px);
+      transform-origin: top;
+      background-color: green;
+
+    }
+    .a:hover{
+      transform-origin: 25px 25px 25px ;
+      transform: rotateX(-90deg);
+    }
+    .b li{
+      position: absolute;
+      width: 100px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      list-style: none;
+      opacity: 0.5;
+    }
+    .b li:nth-of-type(1){
+      /*transform: translateZ(0px);*/
+    }
+    .b li:nth-of-type(2){
+      transform: rotateX(90deg) translateZ(0px);
+      transform-origin: top;
+      background-color: yellow;
+
+    }
+    .b li:nth-of-type(3){
+      transform: rotateX(90deg) translateZ(-50px);
+      transform-origin: top;
+      background-color: pink;
+
+    }
+    .b li:nth-of-type(4){
+      transform:translateZ(50px);
+      transform-origin: top;
+      background-color: green;
+
+    }
+    .b:hover{
+      transform-origin: 25px 25px 25px ;
+      transform: rotateX(-90deg);
+    }
+    .c li{
+      position: absolute;
+      width: 100px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      list-style: none;
+      opacity: 0.5;
+    }
+    .c li:nth-of-type(1){
+      /*transform: translateZ(0px);*/
+    }
+    .c li:nth-of-type(2){
+      transform: rotateX(90deg) translateZ(0px);
+      transform-origin: top;
+      background-color: yellow;
+
+    }
+    .c li:nth-of-type(3){
+      transform: rotateX(90deg) translateZ(-50px);
+      transform-origin: top;
+      background-color: pink;
+
+    }
+    .c li:nth-of-type(4){
+      transform:translateZ(50px);
+      transform-origin: top;
+      background-color: green;
+
+    }
+    .c:hover{
+      transform-origin: 25px 25px 25px ;
+      transform: rotateX(-90deg);
+    }
+    .d li{
+      position: absolute;
+      width: 100px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      list-style: none;
+      opacity: 0.5;
+    }
+    .d li:nth-of-type(1){
+      /*transform: translateZ(0px);*/
+    }
+    .d li:nth-of-type(2){
+      transform: rotateX(90deg) translateZ(0px);
+      transform-origin: top;
+      background-color: yellow;
+
+    }
+    .d li:nth-of-type(3){
+      transform: rotateX(90deg) translateZ(-50px);
+      transform-origin: top;
+      background-color: pink;
+
+    }
+    .d li:nth-of-type(4){
+      transform:translateZ(50px);
+      transform-origin: top;
+      background-color: green;
+
+    }
+    .d:hover{
+      transform-origin: 25px 25px 25px ;
+      transform: rotateX(-90deg);
+    }
+    .e li{
+      position: absolute;
+      width: 100px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      list-style: none;
+      opacity: 0.5;
+    }
+    .e li:nth-of-type(1){
+      /*transform: translateZ(0px);*/
+    }
+    .e li:nth-of-type(2){
+      transform: rotateX(90deg) translateZ(0px);
+      transform-origin: top;
+      background-color: yellow;
+
+    }
+    .e li:nth-of-type(3){
+      transform: rotateX(90deg) translateZ(-50px);
+      transform-origin: top;
+      background-color: pink;
+
+    }
+    .e li:nth-of-type(4){
+      transform:translateZ(50px);
+      transform-origin: top;
+      background-color: green;
+
+    }
+    .e:hover{
+      transform-origin: 25px 25px 25px ;
+      transform: rotateX(-90deg);
+    }
+    .f li{
+      position: absolute;
+      width: 100px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      list-style: none;
+      opacity: 0.5;
+    }
+    .f li:nth-of-type(1){
+      /*transform: translateZ(0px);*/
+    }
+    .f li:nth-of-type(2){
+      transform: rotateX(90deg) translateZ(0px);
+      transform-origin: top;
+      background-color: yellow;
+
+    }
+    .f li:nth-of-type(3){
+      transform: rotateX(90deg) translateZ(-50px);
+      transform-origin: top;
+      background-color: pink;
+
+    }
+    .f li:nth-of-type(4){
+      transform:translateZ(50px);
+      transform-origin: top;
+      background-color: green;
+
+    }
+    .f:hover{
+      transform-origin: 25px 25px 25px ;
+      transform: rotateX(-90deg);
+    }
+
+
+    </style>
+  </head>
+  <body>
+   <ul class="a">
+     <li></li>
+     <li>顺一</li>
+     <li></li>
+     <li>顺二</li>
+   </ul>
+   <ul class="b">
+     <li></li>
+     <li>顺三</li>
+     <li></li>
+     <li>顺四</li>
+   </ul>
+   <ul class="c">
+     <li></li>
+     <li>顺五</li>
+     <li></li>
+     <li>顺六</li>
+   </ul>
+   <ul class="d">
+     <li></li>
+     <li>顺七</li>
+     <li></li>
+     <li>顺八</li>
+   </ul>
+   <ul class="e">
+     <li></li>
+     <li>顺九</li>
+     <li></li>
+     <li>顺十</li>
+   </ul>
+   <ul class="f">
+     <li></li>
+     <li>顺十一</li>
+     <li></li>
+     <li>顺十二</li>
+   </ul>
+
+
+  </body>
+</html>

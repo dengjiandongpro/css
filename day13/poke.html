@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>扑克牌</title>
+     <style media="screen">
+       *{
+         margin: 0;
+         padding:0;
+       }
+       .con{
+         width: 2000px;
+         height: 2000px;
+         background-color: #f7f7f7;
+         margin: 0 auto;
+         border:1px solid #f7f7f7;
+         position: relative;
+       }
+       .poke1,.poke2,.poke3,.poke4,.poke5,.poke6{
+         width: 310px;
+         height: 441px;
+         background-image: url(./image0/pk2.png);
+         margin: 300px 500px;
+         position: absolute;
+         transform-origin: left top;
+         transform: rotate(0);
+         transition: all 3s;
+         /*box-shadow: 3px 3px 2 gray;*/
+       }
+       .con:hover .poke1{
+         transform: rotate(60deg);
+       }
+       .con:hover .poke2{
+         transform: rotate(120deg);
+       }
+        .con:hover .poke3{
+         transform: rotate(180deg);
+       }
+       .con:hover .poke4{
+         transform: rotate(240deg);
+       }
+        .con:hover .poke5{
+         transform: rotate(300deg);
+       }
+        .con:hover .poke6{
+         transform: rotate(360deg);
+       }
+
+
+
+     </style>
+  </head>
+  <body>
+    <div class="con">
+       <div class="poke1">
+
+       </div>
+       <div class="poke2">
+
+       </div>
+       <div class="poke3">
+
+       </div>
+       <div class="poke4">
+
+       </div>
+       <div class="poke5">
+
+       </div>
+       <div class="poke6">
+
+       </div>
+
+    </div>
+
+  </body>
+</html>

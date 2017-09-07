@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Clock</title>
+    <style media="screen">
+      *{
+        margin: 0px;
+        padding: 0px;
+      }
+
+      .a{
+        width: 300px;
+        height:300px;
+        border: 10px solid gray;
+        border-radius: 50%;
+        margin: 200px auto;
+        position: relative;
+
+      }
+      .a .line{
+        width:6px;
+        height:300px;
+        background-color:#999;
+        position:absolute;
+        left:50%;
+        margin-left:-3px
+      }
+      .two{
+               transform: rotateZ(90deg);
+           }
+      .three{
+               transform: rotateZ(30deg);
+           }
+     .four{
+               transform: rotateZ(60deg);
+           }
+     .five{
+               transform: rotateZ(120deg);
+           }
+      .six{
+               transform: rotateZ(150deg);
+           }
+      .box{
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        background-color: white;
+        /*border: 1px solid black;*/
+        position: absolute;
+        left:24px;
+        top:24px;
+      }
+      .circle{
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        left:50%;
+        top:50%;
+        margin-left:  -5px;
+        margin-top:  -5px;
+        border: 10px solid black;
+        border-radius: 50%;
+        z-index: 1;
+      }
+      .hour{
+        width: 10px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top:53px;
+        left:125px;
+        transform-origin: bottom center;
+        animation: hour-move 43200s linear infinite;
+      }
+      .minutes{
+        width: 10px;
+        height: 90px;
+        background-color: black;
+        position: absolute;
+        top: 37px;
+        left:125px;
+        transform: rotate(15deg);
+        transform-origin: bottom center;
+        animation: hour-move 3600s linear infinite;
+      }
+      .second{
+        width: 5px;
+        height: 110px;
+        background-color: red;
+        position: absolute;
+        top: 20px;
+        left:130px;
+        transform: rotate(90deg);
+        transform-origin: bottom center;
+        animation: second-move 60s linear infinite;
+      }
+      @keyframes hour-move {
+        0%{
+          transform: rotate(0deg);
+        }
+        100%{
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes hour-move {
+        0%{
+          transform: rotate(15deg);
+        }
+        100%{
+          transform: rotate(375deg);
+        }
+      }
+
+      @keyframes second-move {
+        0%{
+          transform: rotate(90deg);
+        }
+        100%{
+          transform: rotate(450deg);
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+  <div class="con">
+    <div class="a">
+      <div class=" one line">
+
+      </div>
+      <div class=" two line">
+
+      </div>
+      <div class=" three line">
+
+      </div>
+      <div class=" four line">
+
+      </div>
+      <div class=" five line">
+
+      </div>
+      <div class=" six line">
+
+      </div>
+      <div class="box">
+        <div class="circle">
+        </div>
+        <div class="hour">
+
+        </div>
+        <div class="minutes">
+
+        </div>
+        <div class="second">
+
+        </div>
+
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+
+  </body>
+</html>

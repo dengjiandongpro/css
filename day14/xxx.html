@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      *{
+        margin:0;
+        padding: 0;
+      }
+      body{
+        width: 100%;
+        height: 100%;
+        /*background-color: #ff35e6;*/
+        background-color: pink;
+      }
+      .con{
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        top:50%;
+        left:50%;
+        margin-left: -250px;
+        margin-top: -250px;
+        /*background-color: gray;*/
+        animation: beat 1s linear infinite;
+        transform: scale(200px,200px);
+      }
+      .left{
+        width: 100px;
+        height: 100px;
+        background-color: #ff35e6;
+        border-radius: 50%;
+        position: absolute;
+
+
+      }
+      .right{
+        width: 100px;
+        height: 100px;
+        background-color: #ff35e6;
+        border-radius: 50%;
+        position: absolute;
+        left:90px;
+
+      }
+      .bottom{
+        width: 0px;
+        height: 0px;
+        border-top:  90px solid #ff35e6 ;
+        border-left: 90px solid  transparent;
+        border-right: 90px solid  transparent;
+        border-bottom: 90px solid  transparent;
+        position: absolute;
+        top:73px;
+        left:5px;
+      }
+      @keyframes beat {
+        0%{
+          transform:scale(1,1) ;
+        }
+        50%{
+          transform:scale(1.5, 1.5) ;
+        }
+        100%{
+          transform:scale(2, 2) ;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="con">
+      <div class="left">
+
+      </div>
+      <div class="right">
+
+      </div>
+      <div class="bottom">
+
+      </div>
+
+    </div>
+
+  </body>
+</html>

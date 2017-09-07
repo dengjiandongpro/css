@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>彩虹</title>
+    <style media="screen">
+       *{
+         margin: 0;
+         padding: 0;
+       }
+      .rainbow{
+        height: 250px;
+        width: 500px;
+        border-radius: 250px 250px 0 0;
+        background:red;
+        position: relative;
+        background: radial-gradient(ellipse at center, yellow, red, blue, pink,orange,green,purple);
+
+
+      }
+
+      .rainbow .son{
+        height: 150px;
+        width: 300px;
+        border-radius: 250px 250px 0 0;
+        background:white;
+        position: absolute;
+        top:100px;
+        left:100px;
+
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="rainbow">
+      <div class="son">
+
+      </div>
+
+    </div>
+
+  </body>
+</html>
