@@ -1,0 +1,36 @@
+<html>
+
+<head>
+
+  <title>无标题文档</title>
+  <style media="screen">
+    #word{
+      box-sizing: border-box;
+      width: 500px;
+      height: 100px;
+      line-height: 100px;
+      background-color: rgba(215, 233, 170,0.5);
+      margin: 200px auto;
+      color: rgb(105, 179, 176);
+      text-align: center;
+      font-size: 40px;
+    }
+  </style>
+  <script language="JavaScript" type="text/javascript">
+    var str = "我就静静的看着你";
+    var seq = 0;
+    var second = 1000; //间隔时间1秒钟
+    function scroll() {
+      msg = str.substring(0, seq + 1);
+      document.getElementById('word').innerHTML = msg;
+      seq++;
+      if (seq >= str.length) seq = 0;
+    }
+  </script>
+</head>
+
+<body onload="setInterval('scroll()',second)">
+  <div id="word"></div><br/><br/>
+</body>
+
+</html>

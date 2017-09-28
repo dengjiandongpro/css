@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <input type="text" name="" value="李吉吉有个大屁股,刘锦顺爱卖萌" id="in">
+    <button type="button" name="button" id="btn">检测</button>
+    <span id="sp"></span>
+    <script type="text/javascript">
+     var input=document.getElementById('in');
+     var btn=document.getElementById('btn');
+     var sp=document.getElementById('sp');
+     btn.onclick=function(){
+      var inputContent = input.value;
+      var showContent=inputContent;
+      showContent = showContent.replace(/李吉吉|刘锦顺|国庆/g, function(match){
+      return "<span style='color:red;'>"+match+"</span>"
+
+    })
+      sp.innerHTML=showContent;
+}
+
+
+
+
+    </script>
+  </body>
+</html>

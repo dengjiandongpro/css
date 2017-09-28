@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+    <style media="screen">
+
+      .jum{
+        text-align: center;
+        background-color: #cf4646;
+        color: #fff;
+        padding-top: 60px;
+        padding-bottom: 30px;
+
+      }
+      .navbar-inverse{
+        background-color: #cf4646;
+        border-color: transparent;
+
+      }
+      .navbar-inverse .navbar-brand {
+        color: #efefef;
+      }
+      .jum .btn-getting-started{
+        color: #efbfbf;
+        border: none;
+        box-shadow: inset 0 0 0 2px #efbfbf;
+        border-radius: 2px;
+        background-color: transparent;
+        margin-top: 26px;
+      }
+      .navbar-inverse .navbar-nav > li > a {
+        color: #e8e8e8;
+      }
+      .navbar-inverse .navbar-nav > .active > a,
+      .navbar-inverse .navbar-nav > .active > a:focus,
+      .navbar-inverse .navbar-nav > .active > a:hover {
+        color: #fff;
+        background-color: transparent;
+      }
+      .ben h2{
+         margin-top: 40px;
+      }
+      .ben p{
+        font-size: 18px;
+      }
+      .footer{
+        text-align: center;
+        margin-top: 50px;
+      }
+      .footer a,.footer p{
+        color: #aaa;
+      }
+      #hover:hover{
+        background-color: white;
+      }
+      @media (min-width: 768px) {
+        .site-navbar .navbar-nav {
+          float: right!important;
+        }
+      }
+    </style>
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <nav class="navbar  navbar-fixed-top site-navbar navbar-inverse ">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="flase" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+         </button>
+         <a class="navbar-brand" href="#">Gulp中文网</a>
+        </div>
+
+
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="nav navbar-nav  navbar-right">
+          <li><a href="#">首页</a></li>
+          <li><a href="#">中文文档</a></li>
+          <li><a href="#">入门指南</a></li>
+          <li><a href="#">API</a></li>
+          <li><a href="#">插件开发</a></li>
+          <li><a href="#">常见问题</a></li>
+          <li><a href="#">使用技巧</a></li>
+        </ul>
+      </div>
+    </div><!-- /.navbar-collapse -->
+    </nav>
+    <header class="jum">
+      <img class="hidden" src=".img/index.png" width="800" height="600">
+      <h1>
+        <span class="text-hide">
+          Gulp.js
+          <span>
+            <img class="logo" src="./img/gulp-white-text.svg" alt="">
+          </span>
+        </span>
+      </h1>
+      <p class="lead">用自动化构建工具增强你的工作流程！</p>
+      <p><a href="#" class="btn btn-lg btn-default btn-getting-started rolo=button "id="hover">开始使用</a></p>
+    </header>
+    <div class="ben container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>易于使用</h2>
+          <p>通过代码优于配置的策略，Gulp 让简单的任务简单，复杂的任务可管理。</p>
+        </div>
+        <div class="col-md-6">
+          <h2>构建快速</h2>
+          <p>利用Node.js 流的威力，你可以快速构建项目并减少频繁的 IO 操作。</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h2>插件高质</h2>
+          <p>Gulp 严格的插件指南确保如你期望的那样简洁高质得工作。</p>
+        </div>
+        <div class="col-md-6">
+          <h2>易于学习</h2>
+          <p>通过最少的 API，掌握 Gulp 毫不费力，构建工作尽在掌握：如同一系列流管道。</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <p>&copy; Gulp 中文网</p>
+        <p><a href="http://www.miibeian.gov.cn/" target="_blank">京ICP备11008151号</a> | 京公网安备11010802014853</p>
+      </div>
+    </div>
+
+
+
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

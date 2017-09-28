@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>七牛云</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+    <style media="screen">
+      .logo{
+        padding-top: 7px;
+      }
+      .navbar.nav-a{
+        margin-bottom: 0px;
+        border: none;
+        background-color: transparent;
+        position: absolute;
+        top:0;
+
+
+
+
+
+      }
+      #a{
+        color: white;
+      }
+      .carousel-caption  a .bor{
+        background-color: transparent;
+        border: 1px solid white;
+      }
+      .btn-hollow{
+        border: 1px solid white;
+        color: white
+      }
+       .ding{
+        position: relative;
+      }
+      .carousel-caption#fa{
+        position: absolute;
+        top:40%;
+        right:0%;
+      }
+      .three{
+        position: absolute;
+        top: -25%;
+        left:0%;
+      }
+      #img{
+        position: absolute;
+        top:0%;
+        left:0%;
+      }
+      .features .title{
+        text-align: center;
+      }
+      .features{
+        padding-top: 100px;
+        padding-bottom: 100px;
+      }
+
+      #features-s{
+        background-color: #F7F8F9;
+      }
+      .features  .h2{
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .features .carousel-inner .item img{
+        display: inline-block;
+      }
+
+      .features .container .list{
+        height: 30px;
+        list-style: none;
+      }
+      time{
+        color: gray;
+      }
+      .footer{
+        background-color: #00A0DE;
+      }
+
+      #center{
+        text-align: center;
+      }
+      dt,dd{
+        height: 30px;
+      }
+      dt{
+        color: white;
+      }
+      .bottom{
+        background-color: #303848;
+      }
+     .hidden{
+         background-color: #303848;
+         border-top: 1px solid white;
+         height: 200px;
+     }
+     .last{
+       padding-top: 30px;
+       background-color:  #303848;
+       color: white;
+       height: 200px;
+
+     }
+     .last li{
+       list-style: none;
+       float: left;
+       height: 30px;
+
+     }
+     .last .row.border{
+       border-top: 1px solid white;
+       padding-top: 30px;
+     }
+     .col-sm-4.b-right img{
+       float: right;
+     }
+     .col-sm-3.c-right img{
+       float: right;
+     }
+     .bottom{
+       padding-top: 50px;
+     }
+
+
+
+
+
+
+
+
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-default nav-a  navbar-fixed-top ">
+      <div class="container ">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-collapse" aria-expanded="false">
+            <span class="sr-only">切换导航</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand">
+            <img src="./img/logo-white-18da5fcb02f4aa87dacbf4451a7356b6179baebc96ae77cf24f607c98d12d100.png" width="100" alt="Logo white" vertical-align= "middle">
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="nav-collapse">
+          <ul class="nav navbar-nav nav-left">
+              <li><a id="a" href="#">产品</a></li>
+              <li><a id="a"href="#">解决方案</a></li>
+              <li><a id="a"href="#">价格</a></li>
+              <li><a id="a"href="#">关于我们</a></li>
+          </ul >
+          <ul class="nav navbar-nav navbar-right">
+              <li><a id="a"href="#">管理控制台</a></li>
+              <li><a id="a"href="#">开发者中心</a></li>
+              <li><a id="a"href="#">热门活动</a></li>
+              <li>
+                <div class="logo">
+                 <a  id="a"href="#" class="btn btn-hollow ">登录</a>
+                 <a  id="a"href="#" class="btn btn-primary">注册有礼</a>
+                </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div id="carousel-example-generic" class="carousel slide jum" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      </ol>
+
+      <div class="carousel-inner ding" role="listbox">
+        <div class="item active">
+          <img src="./img/southern-price-reduce-1-872b519799f3159cb62e3243ba2beeb529749de3e2efef8071573c9aa73920b3.jpg" alt="...">
+          <div class="carousel-caption">
+              <p><a href="#" class="btn btn-lg btn-hollow btn-getting-started rolo=button ">查看详情</a></p>
+          </div>
+        </div>
+        <div class="item fa ding">
+          <img  src="./img/southern-price-reduce-b2de1c206d338fb5068ae4193ce0b107b947d0502af7eb23cce47dc0ec965326.jpg" alt="...">
+          <div class="carousel-caption"id="fa">
+            <h2>七牛推出</h2>
+            <p><a href="#" class="btn btn-lg btn btn-primary btn-getting-started rolo=button ">私有云存储解决方案</a></p>
+            <p><a href="#" class="btn btn-lg btn-hollow btn-getting-started rolo=button ">点击查询</a></p>
+          </div>
+        </div>
+        <div class="item ding">
+          <img src="./img/duanshipin-banner-a168a5b1261ef494cdb40c9c37c164ffbc47f6f8f858d231df7d1fe26b688139.jpg" alt="...">
+          <div class="carousel-caption">
+            <img  src="./img/111.png" alt="" width="304" height="219px;">
+            <div class="three">
+              <h1>短视频解决方案重磅上线</h1>
+              <p>小身材大功能，短视频开发从未如此简单</p>
+              <p><a href="#" class="btn btn-lg btn-hollow btn-getting-started rolo=button ">点击查询</a></p>
+            </div>
+          </div>
+      </div>
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+  </div>
+  </div>
+  <div class="features">
+    <div class="container">
+      <div class="title">
+        <h2>持续挖掘海量数据的无限价值</h2>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="row">
+            <div class="col-sm-6">
+              <img width="140" height="140"src="./img/icon-massstorage@2x-e76217a8daa1c84427de719c29b0d50aa693c380e32b085e73421715be9ab4e7.png" alt="">
+            </div>
+            <div class="col-sm-6">
+              <h4>海量存储</h4>
+              <p>所有数据都有有效期，面对不断膨胀的数据领域，数据如何管理？七牛云完全自主知识产权的对象存储，已经过最严酷的考验，为 EB 规模的数据存储做好充分准备。</p>
+              <a class="fa fa-envelope-open"href="#">对象存储</a>
+              <a class="fa fa-id-card" href="#">时序数据库</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="row">
+            <div class="col-sm-6">
+              <img width="140" height="140"src="./img/icon-num@2x-1ce865341f8a2e0d2e31de027adc0fa680858e1bb889749b15533edc4340152d.png" alt="">
+            </div>
+            <div class="col-sm-6">
+              <h4>数据洞察</h4>
+              <p>让数据从负担变成资产的关键步骤是数据的价值挖掘。七牛云提供的大数据产品集和机器学习产品集可以帮助您以最佳的方式理解自己的资产。</p>
+              <a class="fa fa-envelope-open"href="#">智能媒体</a>
+              <a class="fa fa-id-card" href="#">容器云</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+          <div class="col-sm-6">
+            <div class="row">
+              <div class="col-sm-6">
+                <img width="140" height="140"src="./img/icon-accelerate@2x-b363f024eb5a2d263d0909eab8ad231e735bd17e1da14cfd8fa6ff7f820973cb.png" alt="">
+              </div>
+              <div class="col-sm-6">
+                <h4>加速传输</h4>
+                <p>七牛云独家的融合 CDN 结合了主流 CDN 和自建 CDN 节点的优势，让您能够在性能和成本之间得到一个最佳的平衡。</p>
+                <a class="fa fa-envelope-open"href="#">融合 CDN</a>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="row">
+              <div class="col-sm-6">
+                <img width="140" height="140"src="./img/icon-accelerate@2x-b363f024eb5a2d263d0909eab8ad231e735bd17e1da14cfd8fa6ff7f820973cb.png" alt="">
+              </div>
+              <div class="col-sm-6">
+                <h4>加速传输</h4>
+                <p>七牛云独家的融合 CDN 结合了主流 CDN 和自建 CDN 节点的优势，让您能够在性能和成本之间得到一个最佳的平衡。</p>
+                <a class="fa fa-envelope-open"href="#">深度学习台</a>
+                <a class="fa fa-id-card" href="#">Spark服务</a>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+    </div>
+  </div>
+  <div class="features" id=features-s>
+    <div class="container">
+      <div class="title">
+        <h2>一站式视频点播和直播解决方案</h2>
+        <p>集成存储与融合 CDN，汇聚七牛强大的数据处理能力，提供直播、录制、转码、发布、加速、播放等一站式视频直播、点播服务。</p>
+        <p>
+          <a  class="fa fa-user-circle" href="#"class="icon icon-streaming">点播云</a>
+          <a class="fa fa-ravelry" href="#"class="icon icon-video">直播云</a>
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-md-3 col-sm-6 ">
+          <img width="120" height="120" src="./img/11111.png" alt="">
+          <h2>流畅</h2>
+          <p>视频方案的基础在于播放的流畅性。七牛云从推流端到播放端每一个环节都进行了极致的流畅性优化。</p>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <img width="120" height="120"src="./img/22222.png" alt="">
+          <h2>高效</h2>
+          <p>提供端到端的完整方案，让原有需要超过六个月的产品开发工作简化到一个月内就可完成上线。</p>
+
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <img width="120" height="120"src="./img/333.png" alt="">
+          <h2>低成本</h2>
+          <p>我们采用了各种可靠的技术方式，包括内容压缩、P2P 传输、H.265 编码、自适应码流等手段来降低成本。</p>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <img width="120" height="120" src="./img/4444.png" alt="">
+          <h2>可控</h2>
+          <p>充分发挥大数据和机器学习的优势，以最实时的方式监测服务质量，并能以开放的方式进行深度的业务分析。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="features">
+    <div class="container">
+      <h2 class="h2">各行各业的成功案例</h2>
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+
+        <img src="./img/client-changba@2x-e21e1980d9115189e4f6840e3f1677626dad3a4559d15bd50278850bc7f397d9.jpg" alt="...">
+        <img src="./img/client-changhong-87a67fc371007f6f68ac2d01ed5e8500be20e72e160828e933ee66cd4be3394f.jpg" alt="...">
+        <img src="./img/client-dianping@2x-eaff039b4337432b54e5579e7fb6eb8c8bf532dd6effc56afc6bdfd35c9dad3e.jpg" alt="...">
+        <img src="./img/client-guanglianda@2x-acac601b1896038ed546b28a99214d27cf8a35bb3eba7755fa7c4c846af2bdef.jpg" alt="...">
+        <img src="./img/client-haikangweishi@2x-b1c4d0a85f3d18ca8a33b411bca2990adaad9e27334a68eeeb5f75dfe2346758.jpg" alt="">
+        <img src="./img/client-haikangweishi@2x-b1c4d0a85f3d18ca8a33b411bca2990adaad9e27334a68eeeb5f75dfe2346758.jpg" alt="...">
+
+        <div class="carousel-caption">
+          ...
+        </div>
+      </div>
+      <div class="item">
+        <img src="./img/client-hubeiguangdian@2x-aac9e4b08da0d9a14e42f2b6eec8b8879f134e1cbcf347583ff099421c59474d.jpg" alt="...">
+        <img src="./img/client-hujiang@2x-4c74b65ae1a5c938cfe3a5a0b57790dc7cedb72c93a7ab64b16c191f774b1678.jpg" alt="...">
+        <img src="./img/client-intel@2x-6c50c82271ac094366208622babb77d7efef9bc9a80055b65d8c9e0668ae1f2b.jpg" alt="...">
+        <img src="./img/client-jiangsuweishi@2x-4bbbd17f25a35adafe066fec01a7e0d861f41538f31683384eae5f8ff62ff527.jpg" alt="...">
+        <img src="./img/client-meipai@2x-f460d2868fd81a5671b645d1dfc1a9532ab8758b230a2a2d45c95ac81c408166.jpg" alt="...">
+        <img src="./img/client-oppo@2x-ec49bfc0e8b6309066483acf3d3a2c8c7f771ea29dd09279e8ceaae931406e50.jpg" alt="...">
+        <div class="carousel-caption">
+          ...
+        </div>
+      </div>
+      ...
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+
+
+
+    </div>
+
+  </div>
+  <div class="features">
+    <div class="container">
+      <h2 class="h2">热门动态</h2>
+      <div class="row">
+        <div class="col-sm-3">
+          <ul>
+            <li class="list">新闻产品</li>
+            <li class="list">产品动态</li>
+            <li class="list">近期福利</li>
+            <li class="list"><a href="#">更多内容></a></li>
+          </ul>
+
+        </div>
+        <div class="col-sm-9">
+          <div class="row">
+            <div class="col-sm-6 col-md-4">
+              <a href="#">
+                <img width="262" height="202" src="./img/one.png" alt="">
+                <time>2017 年 8 月 28 日发布在 新闻动态</time>
+                <p>七牛云完成新一轮 10 亿元融资，阿里集团与云锋基金领投！</p>
+              </a>
+
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <img width="262" height="202" src="./img/two.png" alt="">
+              <a href="#">
+                <time>2017 年 6 月 5 日发布在 新闻动态</time>
+                <p>七牛云 CEO 许式伟当选「上海十大互联网创业家」</p>
+              </a>
+
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <img width="262" height="202" src="./img/three.png" alt="">
+              <a href="#">
+                <time>2017 年 5 月 23 日发布在 新闻动态</time>
+                <p>七牛云：深度挖掘数据价值 形成竞争壁垒</p>
+              </a>
+
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="container-fluid footer" id=center>
+    <a href="#"><h2>注册七牛云账户，即刻享受多款产品免费额度套餐</h2></a>
+    <br>
+    <br>
+    <br>
+    <p><a href="#" class="btn btn-lg btn-hollow btn-getting-started rolo=button ">马上免费注册</a></p>
+
+  </div>
+  <div class="bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8">
+          <div class="row">
+            <div class="col-sm-4 col-xs-4">
+              <dl>
+                <dt>产品与服务</dt>
+                <dd><a href="#">对象储存</a></dd>
+                <dd><a href="#">融合CDN</a></dd>
+                <dd><a href="#">容器云(即将上线)</a></dd>
+                <dd><a href="#">深度学习平台</a></dd>
+                <dd><a href="#">大数据</a></dd>
+                <dd><a href="#">智能媒体Api</a></dd>
+                <dd><a href="#">直播云</a></dd>
+                <dd><a href="#">点播云</a></dd>
+              </dl>
+            </div>
+            <div class="col-sm-4 col-xs-4">
+              <dl>
+                <dt>产品与服务</dt>
+                <dd><a href="#">对象储存</a></dd>
+                <dd><a href="#">融合CDN</a></dd>
+                <dd><a href="#">容器云(即将上线)</a></dd>
+                <dd><a href="#">深度学习平台</a></dd>
+                <dd><a href="#">大数据</a></dd>
+                <dd><a href="#">智能媒体Api</a></dd>
+                <dd><a href="#">直播云</a></dd>
+                <dd><a href="#">点播云</a></dd>
+              </dl>
+
+            </div>
+            <div class="col-sm-4 col-xs-4">
+              <dl>
+                <dt>产品与服务</dt>
+                <dd><a href="#">对象储存</a></dd>
+                <dd><a href="#">融合CDN</a></dd>
+                <dd><a href="#">容器云(即将上线)</a></dd>
+                <dd><a href="#">深度学习平台</a></dd>
+                <dd><a href="#">大数据</a></dd>
+                <dd><a href="#">智能媒体Api</a></dd>
+                <dd><a href="#">直播云</a></dd>
+                <dd><a href="#">点播云</a></dd>
+              </dl>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 b-right">
+          <a href="#"><img width="200"src="./img/logo111.png" alt=""></a>
+          <img width="200" height="200"src="./img/weixin-qrcode-e4ddfa8a1a16b96c60e4b671b676dfd168ab4f91b5a700a755dde294347fc0f0.png" alt="">
+
+        </div>
+      </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="last">
+    <div class="container">
+      <div class="row border">
+        <div class="col-sm-9 ">
+          <a href="#">© 2017 七牛云 |</a>
+          <a href="#">用户协议 |</a>
+          <a href="#">SLA</a><br>
+          <img src="./img/aq-icon-a20583c81805fe64f7fa210851ce29754af9d25fd6aa5a3225a9557529602513.png" alt="">
+          <span>沪 ICP 备 11037377 号-5</span>
+        </div>
+        <div class="col-sm-3 c-right">
+
+          <a href="#"><img src="./img/iso27001-ad552b09f8c40848363a0fbb04c4389f5b889eecaa785b4f39385d6d48ca8ec9.png" alt=""></a>
+          <a href="#"><img  width="70" height="60"src="./img/kexinyun-d31fdfad0d7acd408117e458b342d45edd7b86d2fe81a6973dbdf059bcc44175.png" alt=""></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $("nav").hover(function(){
+        $(this).css("background-color","#303848")
+      },
+     function(){
+       $(this).css("background-color","transparent")
+     })
+    </script>
+  </body>
+</html>

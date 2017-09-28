@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>年 月 日</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="jquery.min.js" charset="utf-8"></script>
+    <script src="bootstrap.min.js" charset="utf-8"></script>
+    <style media="screen">
+      button {
+        margin-top: 50px;
+      }
+      span {
+        width: 50px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- <form action="#" class="row">
+      <div class="input-group">
+        <span class="input-group-addon">年份</span>
+        <input type="text" class="form-control">
+      </div>
+      <div class="input-group">
+        <span class="input-group-addon" id="month">月份</span>
+        <input type="text" class="form-control" aria-describedby="month">
+      </div>
+
+      <div class="input-group">
+        <span class="input-group-addon" id="day">日期</span>
+        <input type="text" class="form-control" aria-describedby="day">
+      </div>
+
+
+    </form> -->
+
+    <div class="row">
+
+      <div class="col-lg-4 col-md-4">
+        <div class="input-group">
+          <span class="input-group-addon">年份</span>
+          <input type="number" id="year" class="form-control" minlength="1000" maxlength="9999">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-4">
+        <div class="input-group">
+          <span class="input-group-addon">月份</span>
+          <input type="number" id="month" class="form-control" maxlength="12" aria-describedby="month">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-4">
+        <div class="input-group">
+          <span class="input-group-addon">日期</span>
+          <input type="number" id="day" class="form-control" maxlength="31" aria-describedby="day">
+        </div>
+      </div>
+
+      <!-- <button id="btn" class="btn btn-block" title="提示" data-placement="bottom"
+              data-container="body" data-toggle="modal" data-target="#modal" data-content="您输入错误！！！">提交</button> -->
+      <button id="btn" class="btn btn-block" title="提示" data-placement="bottom"
+              data-container="body" data-toggle="popover" data-content="您输入错误！！！">提交</button>
+    </div>
+
+    <!-- <div class="modal fade" id="modal" data-target="#btn" data-toggle="modal" aria-hidden="true">
+      <div class="modal-body">
+        <h1>这是年<span id="span-year"></span>的第<span id="span"></span>天</h1>
+      </div>
+    </div> -->
+    <div class="modal-body">
+      <h1>这是<span id="span-year"></span>年的第<span id="span"></span>天</h1>
+    </div>
+
+
+
+
+    <script type="text/javascript">
+      // var January = 31,February = 28,February2 = 29,March = 31,
+      //     April = 30,May = 31,June = 30,July = 31, Aguest = 31,
+      //     September = 30, October = 31, November = 30, December = 31;
+
+      var Jan = 31, Feb = 28, Mar = 31, Apr = 30,
+          May = 31, Jun = 30, Jul = 31, Agu = 31,
+          Sep = 30, Oct = 31, Nov = 30, Dec = 31;
+
+      var year = document.getElementById("year"),
+          month = document.getElementById("month"),
+          day = document.getElementById("day"),
+          btn = document.getElementById("btn"),
+          spanYear = document.getElementById("span-year");
+          span = document.getElementById("span"),
+
+      btn.onclick = function () {
+        var data = 0;
+        var y = parseInt(year.value),
+            m = parseInt(month.value),
+            d = parseInt(day.value);
+
+        // console.log("ccc", y, m, d);
+        if ((1 <= m)&&(m <= 12)){
+          // switch (m) {
+          //   case 1:
+          //     break;
+          //   case 2:
+          //     data = Jan;
+          //     break;
+          //   case 3:
+          //     data = Jan + Feb;
+          //     break;
+          //   case 4:
+          //     data = Jan + Feb + Mar;
+          //     break;
+          //   case 5:
+          //     data = Jan + Feb + Mar + Apr;
+          //     break;
+          //   case 6:
+          //     data = Jan + Feb + Mar + Apr + May;
+          //     break;
+          //   case 7:
+          //     data = Jan + Feb + Mar + Apr + May + Jun ;
+          //     break;
+          //   case 8:
+          //     data = Jan + Feb + Mar + Apr + May + Jun + Jul ;
+          //     break;
+          //   case 9:
+          //     data = Jan + Feb + Mar + Apr + May + Jun + Jul + Agu;
+          //     break;
+          //   case 10:
+          //     data = Jan + Feb + Mar + Apr + May + Jun + Jul + Agu + Sep;
+          //     break;
+          //   case 11:
+          //     data = Jan + Feb + Mar + Apr + May + Jun + Jul + Agu + Sep + Oct;
+          //     break;
+          //   default:
+          //     data = Jan + Feb + Mar + Apr + May + Jun + Jul + Agu + Sep + Oct + Nov;
+          // }
+          switch (m) {
+            case 12:
+              data += Nov;
+            case 11:
+              data += Oct;
+            case 10:
+              data += Sep;
+            case 9:
+              data += Agu;
+            case 8:
+              data += Jul ;
+            case 7:
+              data += Jun ;
+            case 6:
+              data += May;
+            case 5:
+              data += Apr;
+            case 4:
+              data += Mar;
+            case 3:
+              data += Feb;
+            case 2:
+              data += Jan;
+            case 1:
+              data += 0
+          }
+        } else {
+          console.log(data);
+          spanYear.innerHTML = 6666;
+          span.innerHTML = 666;
+          alert("这里有个错误")
+          $("[data-toggle='popover']").popver('toggle');
+          return
+        };
+
+        // console.log("aaa", y, m, d);
+        if ((1 <= d)&&(d <= 31)) {
+          data = data + d
+        } else {
+          console.log(data);
+          spanYear.innerHTML = 6666;
+          span.innerHTML = 666;
+          alert("这里有个错误")
+          $("[data-toggle='popover']").popver('toggle');
+          return
+        };
+
+        // console.log("bbb", y, m, d);
+        if (y) {
+          var a = y % 100;
+          // console.log(a);
+          if (a) {
+            if (y % 4){
+              // 平年
+              console.log(data,"a");
+              data = data + 0
+            } else {
+              // 闰年
+              console.log(data,"AA");
+              data++
+            }
+          } else {
+            if (y % 400) {
+              // 平年
+              console.log(data,"AsdA");
+              data = data + 0
+            } else {
+              // 闰年
+              console.log(data,"AdfA");
+              data++
+            }
+          };
+        } else {
+          console.log(data);
+          spanYear.innerHTML = 6666;
+          span.innerHTML = 666;
+          $("[data-toggle='popover']").popover('toggle');
+          alert("这里有个错误")
+          return
+        };
+        // $("[data-toggle='popover']").popover('toggle');
+        spanYear.innerHTML = y;
+        span.innerHTML = data;
+      };
+    </script>
+  </body>
+</html>

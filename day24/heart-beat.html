@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      .one{
+        background:url(./heart_beat/bo.png) no-repeat ,url(./heart_beat/search-bg.png) no-repeat;
+        height: 380px;
+        width: 1440px;
+        position: relative;
+
+      }
+      .two{
+        background: url(./heart_beat/yellow-line.png) no-repeat;
+        background-position: 0px 0px ;
+        height: 380px;
+        width: 50px;
+        position: absolute;
+        top:0px;
+        left:0px;
+        transition: 10s all linear;
+
+      }
+
+      .one:hover .two{
+        background-position: -1440px 0px ;
+        left:1440px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="one">
+      <div class="two">
+
+      </div>
+    </div>
+    <script type="text/javascript">
+      var two=document.getElementsByClassName("two");
+      var i=0;
+      var timer1=setInterval(function(){
+        if (i<1440){
+
+          i+=50;
+        }
+
+      },1000)
+    </script>
+  </body>
+</html>

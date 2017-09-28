@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="telephone=no,email=no" name="format-detection">
+  <meta content="yes" name="apple-touch-fullscreen">
+  <title>进度条</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    #bar {
+      width: 100%;
+      height: 30px;
+      background-color: #ccc;
+      overflow: hidden;
+    }
+
+    #progress {
+      width: 0;
+      height: 30px;
+      background-color: #b991ef;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="bar">
+    <div id="progress"></div>
+  </div>
+  <script>
+    document.onclick = function() {
+      var pro = 0; //设置进度条的初始值
+      var proBar = setInterval(function() {
+        pro++;
+        document.getElementById("progress").style.width = pro + "%";
+
+        if (pro == 100) {
+          clearInterval(proBar);
+        }
+      }, 10);
+
+    }
+  </script>
+</body>
+
+</html>

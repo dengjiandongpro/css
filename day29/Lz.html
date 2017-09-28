@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>RegExp正则表达式。。。。。。。。</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var a = "name=asdasd&name=lisi&name=asacxzvdasd&age=10&hobby=eat&name=asadsdxc&name=asd&score=88&hobby=read&hobby=drink";
+      var b = {};
+      var re = /(\&)?(\w*)=(\w*)/g;
+
+      c = a.replace(re, function (match, p1, p2, p3, p4, p5, p5) {
+        console.log("match", match);
+        // console.log("p1", p1);
+        // console.log("p2", p2);
+        // console.log("p3", p3);
+        // console.log("p4", p4);
+        console.log(b[p2]);
+
+        if (b[p2]) {
+          console.log("ASDASDASD");
+          b[p2] += "," + p3;
+          // b[p2] += `${p3}`;
+        };
+
+        b[p2] = "" + p3;
+        // b[p2] = `${p3}`;
+        return "aaa";
+      })
+
+      console.log(c);
+      console.log(b);
+      // var obj = "asd";
+      //
+      // b[obj] = "asd";
+      //
+      // b[obj] += "asd";
+      // console.log(b);
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+    blockquote,
+    body,
+    button,
+    dd,
+    dl,
+    dt,
+    fieldset,
+    form,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    hr,
+    input,
+    legend,
+    li,
+    ol,
+    p,
+    pre,
+    td,
+    textarea,
+    th,
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    .stu {
+      border-collapse: collapse;
+      border: 1px solid gray;
+      text-align: center;
+    }
+
+    .stu th,
+    .stu td {
+      border: 1px solid gray;
+      width: 100px;
+      height: 50px;
+    }
+
+    </style>
+  </head>
+  <body>
+
+    <table class="stu" align="center">
+      <caption>
+        <h1>学生信息</h1></caption>
+        <thead>
+          <tr>
+            <th>name</th>
+            <th>age</th>
+            <th>score</th>
+          </tr>
+        </thead>
+      <tbody></tbody>
+    </table>
+    <button id="btn">登录</button>
+    <script src="./js/jquery.min.js" charset="utf-8"></script>
+    <script type="text/javascript">
+    $("#btn").click(function(){
+
+      $.ajax({
+        method: "post",
+        url: "/table",
+        data:"",
+        success: function(data, textStatus, jqXHR){
+          stus=data.stus;
+          for (var i = 0; i < stus.length; i++) {
+            $(".stu tbody").append("<tr><td>" + stus[i].name + "</td><td>" + stus[i].age +"</td><td>"+ stus[i].score+"</td></tr>");
+          }
+        },
+        error: function(jqXHR, textStatus, error){
+          console.log(error);
+          console.log("http status code : " + textStatus);
+        }
+      });
+    });
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var a="a",z="z",A="A",Z="Z";
+      var a1=a.charCodeAt(),z1=z.charCodeAt(),A1=A.charCodeAt(),
+      Z1=Z.charCodeAt();
+      var differ=a1-A1;
+      var string1="";
+      function change(str){
+        for(var i=0;i<str.length;i++){
+          if ((str.charCodeAt(i)>=a1) && (str.charCodeAt(i)<=z1)){
+            string1+=(String.fromCharCode(str.charCodeAt(i)-differ));
+          }
+          else{
+            string1+=(String.fromCharCode(str.charCodeAt(i)));
+          }
+        }
+        console.log(string1);
+      }
+    change("aBBBBbbbbbb1111中国")
+
+    </script>
+  </body>
+</html>

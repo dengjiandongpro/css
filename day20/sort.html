@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+    var newArr=[6,94,27,66,55,76,21,45];
+       function sortArr(arr){
+          for(i=0;i<arr.length-1;i++){
+            for(j=0;j<arr.length-1-i;j++){
+              if(arr[j]>arr[j+1]){
+                var t=arr[j];
+                arr[j]=arr[j+1];
+                arr[j+1]=t;
+              }
+            }
+          }
+          console.log(arr);
+      //  return arr;
+    }
+    sortArr(newArr);
+
+
+    </script>
+  </body>
+</html>

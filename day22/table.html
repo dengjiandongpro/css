@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>表格</title>
+    <style media="screen">
+    td,th{
+     text-align:center;
+     width: 70px;
+     height: 35px;
+     padding: 0px;
+     }
+
+    table{
+    margin: 100px auto;
+    }
+    button{
+      width: 70px;
+      height: 35px;
+      padding: 0;
+    }
+    .add{
+      border-radius: 10px;
+      background-color: green;
+      color: white;
+      outline: none;
+    }
+    </style>
+  </head>
+  <body>
+     <table border="1" cellspacing="0"  class='one'>
+       <caption>
+         学生信息 <button type="button" name="button" class="add">添加数据</button>
+       </caption>
+       <tr>
+         <th>Name</th>
+         <th>gender</th>
+         <th>age</th>
+         <th style="color:red">删除</th>
+       </tr>
+     </table>
+     <script type="text/javascript">
+       var stus = [
+       ['lisi',20,88],['zhangsan',18,59],['zhaosi',40,30],['wangwu',30,66],['zhaoliu',34,67],['wangqi',78,90]
+      ];
+       var i=0;
+       var add=document.getElementsByClassName('add')[0];
+       var table=document.getElementsByTagName('table')[0];
+       add.addEventListener("click",function(){
+           var item=document.createElement("tr");
+           item.innerHTML="<td>"+stus[i][0]+"</td>"+"<td>"+stus[i][1]+"</td>"+"<td>"+stus[i][2]+"</td>"+"<button>"+"删除"+"</button>"
+           table.appendChild(item);
+           var btn=item.getElementsByTagName('button')[0];
+           btn.addEventListener("click",function(){
+            table.removeChild(item);
+           },false);
+           i++;
+          if(i==5){
+            console.log(i);
+            i=0;
+          }
+       },false);
+     </script>
+  </body>
+</html>

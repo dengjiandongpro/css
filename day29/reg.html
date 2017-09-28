@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      function fun(str){
+        var arr=[];
+        var result=str.replace(/(\&)?(hobby)=(\w*)/g,function(match,p1,p2,p3 ,offset, str){
+          arr.push(p3);
+
+          return "";
+
+        })
+
+        console.log(result+"&"+"hobby="+arr);
+     }
+     fun("name=lisi&name=asdf&hobby=eat&&age=10&age=23&score=88hobby=read&hobby=drink");
+    </script>
+  </body>
+</html>

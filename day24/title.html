@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>不能说的秘密</title>
+  </head>
+  <body>
+     <script type="text/javascript">
+       var title=document.getElementsByTagName("title")[0];
+       var arr=["七里香","夜曲","告白气球","安静","不能说的秘密"];
+       var i=0;
+       setInterval(function(){
+         if(i>4){
+           i=0;
+         }
+         title.innerHTML=arr[i];
+         i++;
+       },1000)
+     </script>
+  </body>
+</html>

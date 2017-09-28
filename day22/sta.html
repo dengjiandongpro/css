@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <style media="screen">
+      .parent{
+        margin: 100px auto;
+        border: 1px solid green;
+        height: 400px;
+        width: 500px;
+        border-radius: 6%;
+        box-shadow: 2px 2px 0 gray,-2px -2px 0 gray;
+      }
+      .top{
+        height: 50px;
+        color:green;
+        padding-left: 50px;
+
+      }
+      .left{
+        margin-left: 50px;
+        height: 50px;
+        width: 50px;
+        background:url(./xingzuo/Icon.png) no-repeat;
+        background-position: 0px 0px;
+        float: left;
+      }
+      .center{
+        float: left;
+        height: 25px;
+        width: 150px;
+        margin-left: 50px;
+      }
+      .clearfix::after{
+        content: "";
+        display: block;
+        clear: both;
+      }
+      .clearfix::before{
+        content: "";
+        display: block;
+        clear: both;
+      }
+      .title{
+        height: 150px;
+        border-bottom: 1px solid green;
+      }
+      .middle{
+        height: 50px;
+      }
+      .bottom{
+
+        height: 50px;
+        position: relative;
+
+
+
+      }
+      .text{
+        color: pink;
+      }
+      .text p{
+        text-indent: 2em;
+      }
+      .bottom-left{
+        box-sizing: border-box;
+        width: 100px;
+        height: 50px;
+        margin-left: 150px;
+        float: left;
+        padding-bottom: 20px;
+      }
+      .bottom-right{
+        width: 80px;
+        height: 20px;
+        position: absolute;
+        top:0;
+        left:220px;
+        background: url(./xingzuo/yunshi.png) no-repeat;
+      }
+     .bottom-star{
+       width: 60px;
+       height: 20px;
+       background: url(./xingzuo/yunshi.png) no-repeat;
+       background-position: 0px -27px ;
+
+
+     }
+
+
+
+
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="title">
+        <div class="top">
+          <h3>星座运势</h3>
+        </div>
+        <div class="middle">
+          <div class="left clearfix">
+          </div>
+          <select name="food" class="center clearfix">
+            <option value="0">白羊座</option>
+            <option value="1">金牛座</option>
+            <option value="2">双子座</option>
+            <option value="3">巨蟹座</option>
+            <option value="4">狮子座</option>
+            <option value="5">处女座</option>
+            <option value="6">天秤座</option>
+            <option value="7">天蝎座</option>
+            <option value="8">射手座</option>
+            <option value="9">魔羯座</option>
+            <option value="10">水瓶座</option>
+            <option value="11">双鱼座</option>
+          </select>
+
+        </div>
+        <div class="bottom">
+          <div class="bottom-left">
+            <strong>今日运势</strong>
+          </div>
+          <div class="bottom-right" id="star_con">
+             <div class="bottom-star">
+
+             </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="text">
+        <p>今日白羊座的运势会很不错，今天直觉力各方面提升，你的观察力会非常不错，会有助于你各方面的运势哦。今日爱情上整体来说还算不错，会有很多深入沟通了解的机会。今日工作上会充分发挥你的才能，一切会很顺利哦。今日财运还不错，特别偏财运会很棒哦，会有别人的支持。今日健康运势还算不错，要注意的是喉咙方面需要保护。</p>
+
+      </div>
+    </div>
+    <script type="text/javascript">
+      var center=document.getElementsByClassName("center")[0];
+      var text=document.getElementsByClassName("text")[0];
+      var star=document.getElementsByClassName("bottom-star")[0];
+
+      center.onchange=function(){
+
+         if(center.value==0){
+           document.getElementsByClassName("left")[0].style.cssText="background-position:0 0px;";
+           text.innerHTML = "<p>今日白羊座的运势会很不错，今天直觉力各方面提升，你的观察力会非常不错，会有助于你各方面的运势哦。今日爱情上整体来说还算不错，会有很多深入沟通了解的机会。今日工作上会充分发挥你的才能，一切会很顺利哦。今日财运还不错，特别偏财运会很棒哦，会有别人的支持。今日健康运势还算不错，要注意的是喉咙方面需要保护。</p>";
+           star.style.cssText="width:80px;";
+
+         }
+         else if (center.value==1){
+           document.getElementsByClassName("left")[0].style.cssText="background-position:0 -50px;";
+          text.innerHTML = "<p>今日金牛座需要学习的是不要固执于自我，需要考虑到别人，在细节问题上要多一些观察，而不是被自己的想法束缚。今日爱情上一般般，可能会需要别人来迁就自己，但是自己会少一些体贴。今日工作上要注意融入集体，学会配合别人哦，而不是自己单独行动。今日财运一般般，但还是有小的收获。今日健康上要注意的是肠胃方面的问题哦，需要好好规律饮食。</p>";
+          star.style.cssText="width:70px;";
+         }else if(center.value==2){
+             document.getElementsByClassName("left")[0].style.cssText="background-position:0 -100px;";
+              text.innerHTML = "<p>今日双子座整体来说会是比较神秘的一天，你们会显得比较被动，更多是去观察一些事情，而不是主动出击。今日爱情上整体来说双子座们更多是默默为对方付出，而不是说出来。今日工作上还算不错的一天，更多是幕后的工作多。今日偏财运会非常棒哦，双子们也会十分开心，有一些花销。今日健康运势整体来说还是会有所回升，但是还要注意睡眠。</p>";
+              star.style.cssText="width:65px;";
+         }else if(center.value==3){
+           document.getElementsByClassName("left")[0].style.cssText="background-position:0 -150px;";
+            text.innerHTML = "<p>今日巨蟹座整体来说还算不错的一天，今天别人会觉得你们聪明机灵，也会来支持你的一些想法哦。今日爱情上整体来说一般般，要注意的是自己一些话太伤人不要说出口。今日工作上运势会很棒，你的努力会获得很多人的认可哦。今日财运还算不错的一天，虽然你会很担心，但也有很多收获。今日健康运势下滑，要注意的是自己精神方面的问题哦。</p>";
+            star.style.cssText="width:65px;";
+
+         }else if(center.value==4){
+           document.getElementsByClassName("left")[0].style.cssText="background-position:0 -200px;";
+            text.innerHTML = "<p>今日狮子座整体来说还算是不错的一天，今天你们的安全感也会获得满足，可能会有在意的人来支持到你。今日爱情上整体来说会注重现实的东西，可能会开始考虑现实的发展。今日工作上的运势会非常不错哦，你会获得很多不错的资源。今日财运会有回升哦，都是长期你通过认真努力而来的收获。今日健康运势还不错，但是可能会感觉到有些疲劳。</p>";
+            star.style.cssText="width:75px;";
+
+         }else if(center.value==5){
+           document.getElementsByClassName("left")[0].style.cssText="background-position:0 -250px;";
+          text.innerHTML = "<p>今日处女座们的运势不错，自己内心想要的东西都能够实现，但是很多情绪还是没办法顺畅地表达出口哦。今日爱情上整体来说还算不错的一天，你会获得安全感，很享受。今日工作上整体来说会很有耐心，也会非常敬业哦。今日财运不错，可能会有一些意想不到的收获。今日健康上要注意的是可能会有失眠的症状出现。</p>";
+
+         }else if(center.value==6){
+           document.getElementsByClassName("left")[0].style.cssText="background-position:0 -300px;";
+            text.innerHTML = "<p>今日天秤座的运势会有所下滑，要注意的是自己情绪不佳，很多事情会容易惹恼你，但是没办法正常发泄。今日爱情上整体来说一般般，要注意关系双方沟通并不是很好。今日工作上要注意自己的脾气，和人沟通时候不要太固执。今日财运会有所下滑，可能会有一些破费哦。今日健康上要注意的是自己的喉咙的问题，可能会上火。</p>";
+            star.style.cssText="width:50px;";
+
+
+         }else if(center.value==7){
+           document.getElementsByClassName("left")[0].style.cssText="background-position:0 -350px;";
+            text.innerHTML = "<p>今日天蝎座会表现的有些极端，自己觉得不是很开心，但是还是会表现得让别人觉得你很不错，也会来支持你。今日爱情上要注意的是情绪可能会容易走向极端，要注意控制自己。今日工作上要注意的是人际方面的沟通哦，不要太直白。今日财运还算不错的一天，但要注意储蓄问题。今日健康上要注意的是肾脏方面的健康哦</p>";
+             star.style.cssText="width:30spx;";
+
+         }else if(center.value==8){
+           document.getElementsByClassName("left")[0].style.cssText="background-position:0 -400px;";
+            text.innerHTML = "<p>今日射手座的运势一般般，整体可能会是迷迷糊糊的状态，要注意做事情有一个清醒理性的大脑哦。今日爱情上整体来说还算是不错哦，会比较甜蜜体贴的一天。今日工作上要注意不要脑袋成浆糊，很可能会有遗忘的事情。今日财运会有所下滑，可能会有一些冲动的开支。今日健康上可能会有失眠的症状出现哦。</p>";
+            star.style.cssText="width:80px;";
+
+         }else if(center.value==9){
+           document.getElementsByClassName("left")[0].style.cssText="background-position:0 -450px;";
+            text.innerHTML = "<p>今日摩羯座可能会表现出自己聪明的一面让很多人看到，别人会对你赞赏有加哦，要注意继续保持。今日爱情上会默默为对方做很多事情，对方也会十分开心哦。今日工作运势会有所回升，好好把握人际方面的助力哦。今日财运还算不错，偏财运会有大大回升哦。今日健康上要注意的是自己脊椎方面的问题。</p>";
+            star.style.cssText="width:50px;";
+
+         }else if(center.value==10){
+           document.getElementsByClassName("left")[0].style.cssText="background-position:0 -500px;";
+            text.innerHTML = "<p>今日水瓶座的运势一般般，你可能会觉得自己很聪明，但是整体来说很多事情你是缺乏远见的。今日爱情上可能会有很多沟通的机会，但是也会有不愉快产生。今日工作上要注意的是交接的问题，不要因为马虎而出错。今日财运会有下滑，会有很多开支出现，需要控制。今日健康运势还算不错，但是不是太稳定。</p>";
+            star.style.cssText="width:56px;";
+
+         }else if(center.value==11){
+           document.getElementsByClassName("left")[0].style.cssText="background-position:0 -550px;";
+            text.innerHTML = "<p>今日双鱼座整体会显得比较有洞察力，你们不再只是由情绪来主导自己，而是认真观察周围所有的事情。今日爱情上占有欲会变得很强烈，也会对对方特别认真特别粘。今日工作上收获会蛮不错，超强洞察力会有助于你。今日偏财运会非常不错哦，不用担心钱不够花。今日健康运势还算不错，但是要注意控制好自己的饮食。</p>";
+            star.style.cssText="width:80px;";
+
+         }
+      }
+
+
+
+
+
+    </script>
+  </body>
+</html>

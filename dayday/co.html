@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="./bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style media="screen">
+
+      .item img:nth-of-type(1){
+        margin-top:  200px ;
+        margin-left: 20%;
+        transform: translateY(-400px);
+        animation: move1 1s linear 1 forwards;
+
+        /*margin-right: auto;*/
+      }
+      .item img:nth-of-type(2){
+        margin-left:20%;
+        margin-right: ;
+        transform: translateY(200px);
+        animation: move2 1s linear 1 forwards;
+      }
+      .item img:nth-of-type(3){
+        margin-top: 300px;
+
+      }
+      .item img:nth-of-type(4){
+        /*margin-top: 300px;*/
+       position: absolute;
+       bottom:0;
+       transform: translateX(0px);
+       animation: jump 4s linear infinite reverse;
+
+
+      }
+      .item img:nth-of-type(5){
+        position: absolute;
+        bottom:0;
+        transform: translateX(0px);
+        animation: jump 4s linear infinite;
+
+      }
+
+      @keyframes jump {
+        0%{
+          transform: translateX(0px);
+        }
+        100%{
+            transform: translateX(100%);
+        }
+      }
+      @keyframes move1 {
+        0%{
+            transform: translateY(-400px);
+        }
+        100%{
+            transform: translateY(0px);
+        }
+      }
+      @keyframes move2 {
+        0%{
+            transform: translateY(200px);
+        }
+        100%{
+            transform: translateY(0px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="carousel-example-generic" class="carousel slide"data-ride="carousel" >
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+    </ol>
+
+    <div class="carousel-inner" role="listbox">
+        <div class="item active one">
+          <div class="con">
+            <img src="./img/dm01_a.png" alt="">
+            <img src="./img/dm01_b.png" alt="">
+            <img src="./img/dm01_c.png" alt="">
+            <img src="./img/dm01_e.png" alt="">
+            <img src="./img/dm01_d.png" alt="">
+          </div>
+
+        </div>
+        <div class="item">
+            <img src="./img/background_2.jpg" alt="Second slide">
+
+        </div>
+
+    </div>
+</div>
+<script src="./js/jquery.min.js"></script>
+<script src="bootstrap/dist/js/bootstrap.min.js"></script>
+
+
+</script>
+  </body>
+</html>

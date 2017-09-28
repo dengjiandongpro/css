@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      function tra(a){
+        var arr=[];
+        var b;
+        var d=0;
+        while (true){
+          if((b=parseInt(a/2))==0){
+            c=a%2;
+            arr.push(c);
+            console.log(arr);
+            break;
+          }else{
+            c=a%2;
+            arr.push(c);
+            a=b;
+          }
+        }
+        newArr=arr.reverse();
+        console.log(newArr.join(''));
+      }
+      tra(100);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      *{
+        margin:0px;
+        padding: 0px;
+      }
+      .a{
+        box-sizing: border-box;
+        width: 500px;
+        height: 100px;
+        line-height: 100px;
+        background-color: rgba(215, 233, 170,0.5);
+        margin: 200px auto;
+        color: rgb(105, 179, 176);
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="a">
+       <h2>现在是<span></span>时<span></span>分<span></span>秒</h2>
+    </div>
+    <script type="text/javascript">
+
+      var span=document.getElementsByTagName("span");
+
+      setInterval(function(){
+        var d=new Date();
+        var dh=d.getHours();
+        var dm=d.getMinutes();
+        var ds=d.getSeconds();
+        span[0].innerHTML=dh;
+        span[1].innerHTML=dm;
+        span[2].innerHTML=ds;
+        console.log(ds);
+      },1000);
+    </script>
+  </body>
+</html>

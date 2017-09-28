@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .one{
+        background-color:green;
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="doc">
+      <div class="dod">
+
+      </div>
+
+    </div>
+    <script type="text/javascript">
+      var doc=document.getElementsByClassName("doc")[0];
+      doc.style.cssText="width:100px;height:100px;"
+      doc.className="";
+      doc.style.height="200px";
+      doc.style.backgroundColor="black";
+      doc.removeChild(doc.firstElementChild);
+      doc.style.cssText="";
+    </script>
+  </body>
+</html>

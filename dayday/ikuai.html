@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>爱生活，爱连接</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style media="screen">
+       #nav-background{
+         background-color: rgba(255, 255, 255, 0.9);
+       }
+       .nav .announ{
+         padding: 10px;
+       }
+       #mar{
+         margin-left: 25px;
+
+       }
+       #left-mar{
+         margin-left: 30px;
+         margin-top: 10px;
+       }
+       .item.bg{
+         height: 962px;
+         background-image: url(./img/background_2.jpg);
+       }
+        .item.bg .a{
+          width:80%;
+          height: 189px;
+          /*border: 1px solid green;*/
+          margin-top: 200px;
+          float: left;
+        }
+        .item.bg .a img:nth-of-type(1){
+          float: left;
+        }
+        .item.bg .b{
+          width:50%;
+          height: 300px;
+          float: left;
+          /*visibility: hidden;
+          animation: dis 1s linear infinite;*/
+
+        }
+        .item.bg .c{
+          width:50%;
+          height: 160px;
+          float: left;}
+        .middle{
+          margin-top: 20px;
+        }
+        .font h3{
+          font-size: 36px;
+          font-weight: normal;
+          color: #0088cc;
+        }
+        .font p{
+          color: #5f5f5f;
+          font-size: 20px;
+          line-height: 180%;
+          padding: 10px;
+        }
+        .font {
+          margin-top: 100px;
+        }
+        .backbg-eee{
+          background-color: #eeeeee;
+          padding: 50px;
+        }
+        .backbg-fff .row .pad{
+          padding-left: 300px;
+        }
+        .w666{
+          height: 660px;
+          background: url(./img/indexB-img03.jpg);
+          background-position: center center ;
+
+        }
+        .w666 .fc{
+          display: table;
+          margin-left: auto;
+          margin-right: auto;
+          text-align: center;
+
+        }
+        .w666 .fc h3{
+          font-size: 36px;
+          font-weight: normal;
+          color: #0088cc;
+        }
+        .w666 .fc p{
+            color: #5f5f5f;
+            font-size: 20px;
+            line-height: 180%;
+            padding: 10px;
+          }
+        .backbg-rrr{
+          padding: 50px;
+        }
+        .backbg-rrr p:nth-of-type(1){
+          color: #0088cc;
+          font-size: 16px;
+          padding-top: 30px;
+        }
+        .backbg-rrr .row.ppp{
+          margin: 15px 0;
+        }
+        .footer{
+          font-size: 14px;
+          line-height: 30px;
+          background-color: #333;
+          color: #bac1c8;
+          font-size: 12px;
+          padding: 20px 0;
+          text-align: center;
+
+        }
+        .footer-copyright{
+          text-align: center;
+        }
+        .footer h6{
+          padding-top: 15px;
+          padding-bottom: 15px;
+          font-size: 16px;
+        }
+        .footer a {
+          color: #bac1c8;
+          white-space: nowrap;
+        }
+        .footer p{
+          font-size: 14px;
+          line-height: 30px;
+        }
+        .footer-copyright{
+          padding-top: 30px;
+          padding-bottom: 15px;
+          padding-left: 0px;
+          padding-right: 0px;
+        }
+       .item .one{
+         height: 962px;
+
+       }
+       .item .one.a1{
+         transform:translateY(0px);
+       }
+       #fir{
+         background-color: #0088cc;
+       }
+       #fir a{
+         color:white;
+       }
+       /*.item .one.b1{
+         background-image: url(./img/dm01_c.png);
+       }*/
+
+
+
+       #mar li{
+        margin-left: 1px;
+       }
+       /*@keyframes trans {
+
+         100%{
+           visibility: visible;
+         }
+       }*/
+
+
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-default nav-a navbar-fixed-top">
+      <div id="nav-background">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-collapse" aria-expanded="false">
+              <span class="sr-only">切换导航</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="nav-brand">
+              <img src="./img/logo-big.png" width="213"height="34" alt="">
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="nav-collapse">
+          <ul class="nav navbar-nav nav-left "id="mar">
+              <li id="fir"><a href="#">首页</a></li>
+              <li><a href="#">固件下载</a></li>
+              <li><a href="#">爱快硬件</a></li>
+              <li><a href="#">技术支持</a></li>
+              <li><a href="#">渠道合作</a></li>
+              <li><a href="#">场景案例</a></li>
+              <li><a href="#">OEM定制</a></li>
+              <li>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  Language
+                  <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">简体中文</a></li>
+                  <li><a href="#">English</a></li>
+                </ul>
+              </li>
+          </ul >
+          <ul class="nav navbar-nav navbar-right" id=left-mar>
+              <li>
+                <div class="logo">
+                 <a  id="a"href="#" class="btn btn-default ">爱快云</a>
+                 <a  id="a"href="#" class="btn btn-default">爱快论坛</a>
+                </div>
+            </li>
+          </ul>
+
+        </div>
+
+
+        </div>
+
+      </div>
+    </nav>
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      </ol>
+      <div class="carousel-inner ding" role="listbox">
+        <div class="item  bg active">
+          <div class="container">
+            <div class="a">
+              <img src="./img/dm02_b.png" alt="" width="50%" height="100%">
+              <img src="./img/dm02_c.png" alt="" width="50%" height="100%">
+            </div>
+            <div class="b">
+              <img src="./img/dm02_a.png" alt=""width="100%" height="100%">
+            </div>
+            <div class="c">
+              <img  src="./img/dm02_d.png" alt=""width="100%" height="100%">
+            </div>
+
+          </div>
+
+
+        </div>
+        <div class="item  one">
+
+            <div class="a1" style="margin-top:200px;margin-left:200px;">
+               <img src="./img/dm01_a.png" alt="" width="25%" height="25%">
+            </div>
+            <div class="b1">
+               <img src="./img/dm01_c.png" alt="" width="100%" height="100%" >
+               <!-- <img style="position:absolute ; top :0px;" src="./img/dm01_e.png" alt=""> -->
+            </div>
+
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <div class="container middle">
+      <div class="row">
+        <div class="col-sm-8">
+          <img src="img/indexB-img04.png" alt="" width="100%">
+        </div>
+        <div class="col-sm-4 font">
+         <h3>超赞的云系统</h3>
+         <p>
+           云平台集中管理 <br>
+           智能云AC <br>
+           Portal认证配置 <br>
+           图形化数据体现 <br>
+           自定义JS通知插入 <br>
+           第三方认证接口 <br>
+         </p>
+         <p style=" font-size:18px; color:#0088cc;">更多,待你发现 ...</p>
+        </div>
+      </div>
+    </div>
+    <div class="backbg-eee">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4 font">
+            <h3>七层DPI流量管理</h3>
+            <p>
+              看网页、看电影、玩游戏互不干扰 <br>
+              多台终端同时上网不卡<br><br>
+              带宽利用最大化，绝不浪费带宽<br>
+              永远告别延迟卡顿<br>
+              3000款+应用识别<br>
+            </p>
+
+          </div>
+          <div class="col-sm-8">
+            <img src="./img/indexB-img01.png" alt="">
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    <div class="backbg-fff">
+      <div class="row">
+        <div class="col-sm-8 pad">
+          <img src="./img/indexB-img02.png" alt="">
+        </div>
+        <div class="col-sm-4 font">
+          <h3>五大功能</h3>
+          <p>
+            多线路由 <br>
+            一键控流<br>
+            免费AC管理<br>
+            自定义微信认证<br>
+            集中云管理
+
+
+          </p>
+
+        </div>
+      </div>
+    </div>
+    <div class="w666">
+      <div class="container">
+        <div class="col-sm-12 ">
+          <div class="fc">
+              <h3  style="margin-top:260px;">开放尽显开放</h3>
+              <p>
+                Portal认证页面自定义 <br>
+                云数据API+认证SDK<br>
+                从数据到应用，从应用到底层的开放之旅<br>
+
+              </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="backbg-rrr">
+      <div class="container">
+        <div class="row ppp">
+          <div class="col-sm-6">
+            <div class="col-sm-3">
+              <img src="./img/indexLsit01.png" alt="">
+            </div>
+            <div class="col-sm-9">
+              <p>云系统</p>
+              <p>在线管理您所拥有的所有路由器</p>
+            </div>
+
+          </div>
+          <div class="col-sm-6">
+            <div class="col-sm-3">
+              <img src="./img/indexLsit02.png" alt="">
+            </div>
+            <div class="col-sm-9">
+              <p>云系统</p>
+              <p>在线管理您所拥有的所有路由器</p>
+            </div>
+          </div>
+        </div>
+        <div class="row ppp">
+          <div class="col-sm-6">
+            <div class="col-sm-3">
+              <img src="./img/indexLsit03.png" alt="">
+            </div>
+            <div class="col-sm-9">
+              <p>云系统</p>
+              <p>在线管理您所拥有的所有路由器</p>
+            </div>
+
+          </div>
+          <div class="col-sm-6">
+            <div class="col-sm-3">
+              <img src="./img/indexLsit04.png" alt="">
+            </div>
+            <div class="col-sm-9">
+              <p>云系统</p>
+              <p>在线管理您所拥有的所有路由器</p>
+            </div>
+          </div>
+        </div>
+        <div class="row ppp">
+          <div class="col-sm-6">
+            <div class="col-sm-3">
+              <img src="./img/indexLsit05.png" alt="">
+            </div>
+            <div class="col-sm-9">
+              <p>云系统</p>
+              <p>在线管理您所拥有的所有路由器</p>
+            </div>
+
+          </div>
+          <div class="col-sm-6">
+            <div class="col-sm-3">
+              <img src="./img/indexLsit06.png" alt="">
+            </div>
+            <div class="col-sm-9">
+              <p>云系统</p>
+              <p>在线管理您所拥有的所有路由器</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row ppp">
+          <div class="col-sm-6">
+            <div class="col-sm-3">
+              <img src="./img/indexLsit07.png" alt="">
+            </div>
+            <div class="col-sm-9">
+              <p>云系统</p>
+              <p>在线管理您所拥有的所有路由器</p>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7 col-sm-8 col-lg-8">
+            <div class="col-xs-4 col-md-4">
+               <div class="footer-g">
+                 <h6>技术服务</h6>
+                 <p><a href="#">技术论坛</a></p>
+                 <p><a href="#">技术论坛</a></p>
+                 <p><a href="#">技术咨询</a></p>
+                 <p><a href="#">售后服务</a></p>
+               </div>
+
+              </div>
+              <div class="col-xs-4 col-md-4">
+                 <div class="footer-g">
+                   <h6>技术服务</h6>
+                   <p><a href="#">技术论坛</a></p>
+                   <p><a href="#">技术论坛</a></p>
+                   <p><a href="#">技术咨询</a></p>
+                   <p><a href="#">售后服务</a></p>
+                 </div>
+
+                </div>
+                <div class="col-xs-4 col-md-4">
+                   <div class="footer-g">
+                     <h6>技术服务</h6>
+                     <p><a href="#">技术论坛</a></p>
+                     <p><a href="#">技术论坛</a></p>
+                     <p><a href="#">技术咨询</a></p>
+                     <p><a href="#">售后服务</a></p>
+                   </div>
+
+                 </div>
+
+            </div>
+          <div class="col-md-3 clo-sm-4 col-lg-3">
+            <div class="footer-s">
+              <h2>400-877-3227</h2>
+              <p>技术支持电话</p>
+              <p>周一至周五 9:00 - 20:30</p>
+              <p>QQ交流群：108636278</p>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-2 col-lg-1">
+            <div style="height:20px ; width:98px">
+
+            </div>
+            <img src="./img/qrCode.png" alt="" width="98">
+            <p style=" font-size:15px;">关注官方微信</p>
+          </div>
+          <div class="col-md-12">
+            <div class="footer-copyright">
+              <span>Copyright © 2012 - 2017 iKuai. All Rights Reserved. </span>
+              <span> 京ICP备13042604号</span>
+              <br>
+              <span>版权所有 全讯汇聚网络科技（北京）有限公司</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+
+
+    </script>
+  </body>
+</html>

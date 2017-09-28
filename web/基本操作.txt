@@ -1,0 +1,72 @@
+wnloads  newfile3  Templates  webpack_test
+ys@ys-ubuntu:~$ ls
+Desktop    intro     Pictures   ubuntu-16.04-desktop-amd64.iso
+Documents  Music     Public     Videos
+Downloads  newfile3  Templates  webpack_test
+ys@ys-ubuntu:~$ mv newfile3  newfile3 
+mv: 'newfile3' and 'newfile3' are the same file
+ys@ys-ubuntu:~$ mv newfile3   Desktop/
+ys@ys-ubuntu:~$ ls
+Desktop    intro     Public                          Videos
+Documents  Music     Templates                       webpack_test
+Downloads  Pictures  ubuntu-16.04-desktop-amd64.iso
+ys@ys-ubuntu:~$ mv Desktop/newfile3   .   
+ys@ys-ubuntu:~$ ls
+Desktop    intro     Pictures   ubuntu-16.04-desktop-amd64.iso
+Documents  Music     Public     Videos
+Downloads  newfile3  Templates  webpack_test
+ys@ys-ubuntu:~$ rm   newfile3 
+ys@ys-ubuntu:~$ ls
+Desktop    intro     Public                          Videos
+Documents  Music     Templates                       webpack_test
+Downloads  Pictures  ubuntu-16.04-desktop-amd64.iso
+ys@ys-ubuntu:~$ clear 
+
+ys@ys-ubuntu:~$ ls
+Desktop    intro     Public                          Videos
+Documents  Music     Templates                       webpack_test
+Downloads  Pictures  ubuntu-16.04-desktop-amd64.iso
+ys@ys-ubuntu:~$ mkd
+mkdir    mkdosfs  
+ys@ys-ubuntu:~$ mkdir newdir 
+ys@ys-ubuntu:~$ ls
+Desktop    intro   Pictures   ubuntu-16.04-desktop-amd64.iso
+Documents  Music   Public     Videos
+Downloads  newdir  Templates  webpack_test
+ys@ys-ubuntu:~$ cd newdir/
+ys@ys-ubuntu:~/newdir$ ls
+ys@ys-ubuntu:~/newdir$ vi newfile
+ys@ys-ubuntu:~/newdir$ ls
+newfile
+ys@ys-ubuntu:~/newdir$ cd ..
+ys@ys-ubuntu:~$ ls
+Desktop    intro   Pictures   ubuntu-16.04-desktop-amd64.iso
+Documents  Music   Public     Videos
+Downloads  newdir  Templates  webpack_test
+ys@ys-ubuntu:~$ cp newdir    ./Desktop 
+cp: omitting directory 'newdir'
+ys@ys-ubuntu:~$ cp newdir    ./Desktop  -a    
+ys@ys-ubuntu:~$ cp newdir    /home/ys/Desktop  -a    
+ys@ys-ubuntu:~$ ls
+Desktop    intro   Pictures   ubuntu-16.04-desktop-amd64.iso
+Documents  Music   Public     Videos
+Downloads  newdir  Templates  webpack_test
+ys@ys-ubuntu:~$ mv newdir   Desktop
+ys@ys-ubuntu:~$ mv Desktop/newdir/   .  
+ys@ys-ubuntu:~$ ls
+Desktop    intro   Pictures   ubuntu-16.04-desktop-amd64.iso
+Documents  Music   Public     Videos
+Downloads  newdir  Templates  webpack_test
+ys@ys-ubuntu:~$ mv newdir  newdir2  
+ys@ys-ubuntu:~$ ls
+Desktop    intro    Pictures   ubuntu-16.04-desktop-amd64.iso
+Documents  Music    Public     Videos
+Downloads  newdir2  Templates  webpack_test
+ys@ys-ubuntu:~$ rm newdir2/ 
+rm: cannot remove 'newdir2/': Is a directory
+ys@ys-ubuntu:~$ rm newdir2/  -rf 
+ys@ys-ubuntu:~$ ls
+Desktop    intro     Public                          Videos
+Documents  Music     Templates                       webpack_test
+Downloads  Pictures  ubuntu-16.04-desktop-amd64.iso
+ys@ys-ubuntu:~$ 

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta charset="utf-8">
+        <title>第几天</title>
+      </head>
+      <body>
+        输入年： <input id="one" type="number" ><br>
+        输入月： <input id="two" type="number" ><br>
+        输入日： <input id="three" type="number" ><br>
+        <button id="btn">点我喔</button><br>
+        <h1>这是今年的第：<span id=show></span><span>天</span></h1>
+
+        <script type="text/javascript">
+
+           var input1= document.getElementById('one'),
+               input2= document.getElementById('two'),
+               input3= document.getElementById('three'),
+               btn = document.getElementById('btn'),
+               show = document.getElementById('show');
+           btn.onclick = function(){
+            var  year= parseInt(input1.value),
+                 month= parseInt(input2.value),
+                 day = parseInt(input3.value),
+                 sum=0;
+                 if((year%4==0&&year%100!=0)||(year%400==0)){
+                      switch (month) {
+                        case 1 :
+                         sum=0;
+                         break;
+                        case 2 :
+                         sum=31;
+                         break;
+                        case 3:
+                         sum=31+29;
+                         break;
+                        case 4:
+                         sum=31+29+31;
+                         break;
+                        case 5:
+                         sum=31+29+31+30;
+                         break;
+                        case 6:
+                         sum=31+29+31+30+31;
+                         break;
+                        case 7:
+                         sum=31+29+31+30+31+30;
+                         break;
+                        case 8:
+                         sum=31+29+31+30+31+30+31;
+                          break;
+                        case 9:
+                         sum=31+29+31+30+31+30+31+31;
+                         break;
+                        case 10:
+                         sum=31+29+31+30+31+30+31+31+30;
+                         break;
+                        case 11:
+                         sum=31+29+31+30+31+30+31+31+30+31;
+                         break;
+                        case 12:
+                         sum=31+29+31+30+31+30+31+31+30+31+30;
+                         break;
+                      }
+                      sum=sum+day;
+                      console.log(sum);
+                      show.innerHTML=sum;
+                    }else{
+                      switch (month) {
+                        case 1 :
+                         sum=0;
+                         break;
+                        case 2 :
+                         sum=31;
+                         break;
+                        case 3:
+                         sum=31+28;
+                         break;
+                        case 4:
+                         sum=31+28+31;
+                         break;
+                        case 5:
+                         sum=31+28+31+30;
+                         break;
+                        case 6:
+                         sum=31+28+31+30+31;
+                         break;
+                        case 7:
+                         sum=31+28+31+30+31+30;
+                         break;
+                        case 8:
+                         sum=31+28+31+30+31+30+31;
+                          break;
+                        case 9:
+                         sum=31+28+31+30+31+30+31+31;
+                         break;
+                        case 10:
+                         sum=31+28+31+30+31+30+31+31+30;
+                         break;
+                        case 11:
+                         sum=31+28+31+30+31+30+31+31+30+31;
+                         break;
+                        case 12:
+                         sum=31+28+31+30+31+30+31+31+30+31+30;
+                         break;
+                    }
+                    sum=sum+day
+                    console.log(sum);
+                    show.innerHTML=sum;
+                  }
+
+
+
+
+
+
+
+
+        </script>
+      </body>
+    </html>
+
+  </body>
+</html>

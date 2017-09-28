@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      function Person(name,age){
+        this.name = name;
+        this.age = age;
+      }
+      Person.prototype.sayHello =function(){
+        console.log("hello.....");
+      };
+
+      function Student(name,age,score){
+        Person.call(this,name,age);
+        this.score =score;
+      }
+
+      Student.prototype = new Person();
+      Student.prototype.contructor = Student;
+
+      var stu1= new Student('lisi',20,59);
+      console.log(stu1);
+      stu1.sayHello();
+    </script>
+  </body>
+</html>
