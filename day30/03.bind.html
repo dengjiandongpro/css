@@ -24,7 +24,6 @@
       return function (){
         var curArg = Array.prototype.slice.call(arguments, 0);
         var args = preArg.concat(curArg);
-
         return handler.apply(context, args);
       };
     }
